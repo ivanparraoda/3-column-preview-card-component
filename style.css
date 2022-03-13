@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+    --Verylightgraybackgroundheadingsbuttons: hsl(0, 0%, 95%);
+}
+
+body{
+    background: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    min-width: 100vh;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+   
+
+    
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 90px 50px;
+
+}
+
+.wrapper{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 2rem;
+    
+
+
+}
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--Verylightgraybackgroundheadingsbuttons);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9em;
+    border: 2px solid var(--Verylightgraybackgroundheadingsbuttons);
+}
+
+.sedan{
+    padding: 40px;
+    background-color: var(--Brightorange);
+
+}
+h2{
+    color: var(--Verylightgraybackgroundheadingsbuttons);
+    font-size: 30px;
+    font-family: 'Big Shoulders Display',
+        cursive;
+        text-transform: uppercase;
+
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparentwhiteparagraphs);
+    line-height: 1.6;
+    padding-bottom: 4em;
+    
+    
+}
+.sedan a{
+    
+
+    color: var(--Brightorange);
+}
+
+.suvs{
+    padding: 40px;
+    background-color: var(--Darkcyan);
+
+}
+
+.suvs a{
+    color: var(--Darkcyan);
+}
+
+.luxury{
+    padding: 40px;
+    background-color: var(--Verydarkcyan);
+
+}
+.luxury a{
+    color: var(--Verydarkcyan);
+}
+
+a:hover{
+   
+    color: var(--Verylightgraybackgroundheadingsbuttons);
+    background-color:transparent;
+  
+    
+
+}
+
+@media only screen and (max-width:760px){
+    
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        margin: 2rem .5rem;
+    }
+}
